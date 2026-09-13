@@ -75,3 +75,15 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
 * **Key Logic Systems:**
   * **String Equality Gates (`==` Operator):** Performs precise text evaluation to validate dynamic user privileges.
   * **Waterfall Decision Tree (`if-elif-else`):** Establishes explicit boundaries between premium, basic, and fallback account states.
+
+----------------------------------------------------------------------------------------------------
+
+---
+
+### Module 7: Smart Admission Engine (`smart_admission.py`)
+* **Purpose:** Streamlines enrollment eligibility and dynamic financial aid evaluation.
+* **Core Function:** `calculate_admission(grade, score, fees)`
+* **Key Logic Systems:**
+  * **Categorical Qualification:** Maps dynamic user grades to educational tiers using string equality matching.
+  * **Compound Aid Allocation:** Leverages dual boolean constraints (`score >= 90 and fees > 5000`) to trigger automated fee deductions.
+  * **Formatted System Outputs:** Aggregates variable states into clean status reports using inline F-string interpolation.
