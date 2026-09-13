@@ -1,2 +1,23 @@
 # Exeter-core-logics
 Daily logic building and Python mini-experiments for Exeter profile.
+
+
+# Phoenix-Learn Core Logic Suite 🚀
+
+An educational logic engine designed to handle quiz scoring, enrollment automation, and progression analytics. Built for Phillips Exeter Academy (PEA) portfolio showcasing core Python fundamental architectures.
+
+---
+
+## 🛠️ Logic Breakdown & Architecture
+
+### Module 1: Quiz Evaluator (`quiz_evaluator.py`)
+* **Purpose:** Evaluates dynamic quiz performance against multi-tiered user membership access models.
+* **Core Function:** `evaluate_quiz(correct_answers, total_questions, plan_type)`
+* **Key Logic Systems:**
+  * **Relative Math:** Calculates percentage `(correct / total) * 100` instead of static bounds to support variable total questions.
+  * **Compound Gate (`and` operator):** Requires high performance (≥ 80%) AND premium plan (`"Pro"`) simultaneously before granting honors.
+  * **Branching Strategy:** Uses `if-elif-else` waterfall logic for clear evaluation boundaries.
+
+---
+
+*(More modules like course_manager.py will be appended sequentially)*
