@@ -1,7 +1,18 @@
+# Phoenix-Learn: Twin Age Calculator Module
+# Purpose: Reverse-engineers group metrics to extract specific unknown variable values (Twin Age).
+# Logic: Algebraic manipulation using average equations: Total = Avg * Count.
+
 def calculate_twin_age(average_age, total_people, elder_age):
+    # Step 1: Calculate cumulative sum of ages across the entire group
     total_age = average_age * total_people
+    
+    # Step 2: Deduct known outlier (elder age) to isolate the twin pair's combined age
     remaining_age = total_age - elder_age
+    
+    # Step 3: Divide remaining sum equally since twins share identical ages
     twin_age = remaining_age / 2
+    
     return twin_age
 
-print(calculate_twin_age(12, 56, 89))
+# Test Execution: Avg 12, Total 56 people, Elder 89 years
+print(f"Twin Age: {calculate_twin_age(12, 56, 89)}")
