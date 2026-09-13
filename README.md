@@ -53,3 +53,14 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
 * **Key Logic Systems:**
   * **Relational Threshold Checking ($\ge$):** Determines eligibility by evaluating minimum required order value ($100).
   * **Percentage Factor Calculation:** Dynamically computes discounted totals using fractional multipliers (`cart_total * 0.80`).
+
+----------------------------------------------------------------------------------------------------
+
+---
+
+### Module 5: Central Dashboard Engine (`dashboard_engine.py`)
+* **Purpose:** Orchestrates multi-system status evaluation through a single master control function.
+* **Core Function:** `student_dashboard_engine(battery_level, plan_type, score, attendance)`
+* **Key Logic Systems:**
+  * **Modular System Architecture:** Integrates micro-functions (`battery_gate`, `check_plan`, `issue_certificate`) to achieve clean separation of concerns.
+  * **Pipeline Parameter Delegation:** Forwards dynamic runtime arguments seamlessly to underlying conditional validation logic.
