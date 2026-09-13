@@ -64,3 +64,14 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
 * **Key Logic Systems:**
   * **Modular System Architecture:** Integrates micro-functions (`battery_gate`, `check_plan`, `issue_certificate`) to achieve clean separation of concerns.
   * **Pipeline Parameter Delegation:** Forwards dynamic runtime arguments seamlessly to underlying conditional validation logic.
+
+----------------------------------------------------------------------------------------------------
+
+---
+
+### Module 6: Subscription Entitlement Engine (`plan_gate.py`)
+* **Purpose:** Controls feature availability and course access dynamically based on subscription tiers.
+* **Core Function:** `check_plan(user_plan)`
+* **Key Logic Systems:**
+  * **String Equality Gates (`==` Operator):** Performs precise text evaluation to validate dynamic user privileges.
+  * **Waterfall Decision Tree (`if-elif-else`):** Establishes explicit boundaries between premium, basic, and fallback account states.
