@@ -45,3 +45,11 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
 
 ----------------------------------------------------------------------------------------------------
 
+---
+
+### Module 4: Cart Discount Engine (`cart_discount.py`)
+* **Purpose:** Automates dynamic price reductions based on order value thresholds.
+* **Core Function:** `apply_discount(cart_total)`
+* **Key Logic Systems:**
+  * **Relational Threshold Checking ($\ge$):** Determines eligibility by evaluating minimum required order value ($100).
+  * **Percentage Factor Calculation:** Dynamically computes discounted totals using fractional multipliers (`cart_total * 0.80`).
