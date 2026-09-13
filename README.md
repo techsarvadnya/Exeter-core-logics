@@ -87,3 +87,18 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
   * **Categorical Qualification:** Maps dynamic user grades to educational tiers using string equality matching.
   * **Compound Aid Allocation:** Leverages dual boolean constraints (`score >= 90 and fees > 5000`) to trigger automated fee deductions.
   * **Formatted System Outputs:** Aggregates variable states into clean status reports using inline F-string interpolation.
+
+------------------------------------------------------------------------------------------------
+
+---
+
+### Module 8: Course Enrollment Gate (`course_enrollment_gate.py`)
+* **Purpose:** Manages registration approvals using multi-layer guard logic and inventory checks.
+* **Core Function:** `evaluate_enrollment(prereq_completed, seats_available, account_active)`
+* **Key Logic Systems:**
+  * **Guard Clause Pattern (`not` operator):** Instantly rejects suspended or inactive accounts early to reduce redundant checks.
+  * **Compound Inventory Validation (`and`):** Demands both course eligibility and positive capacity count ($\text{seats} > 0$) for approval.
+  * **State Branching:** Handles dynamic allocation states (Approved, Pending, Waitlisted, Denied) cleanly.
+ 
+-----------------------------------------------------------------------------------------------
+
