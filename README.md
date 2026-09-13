@@ -34,3 +34,14 @@ An educational logic engine designed to handle quiz scoring, enrollment automati
   * **Equal Allocation:** Computes division step to resolve multi-variable constraints linearly.
 ----------------------------------------------------------------------------------------------------
 
+---
+
+### Module 3: Power Saver Engine (`battery_gate.py`)
+* **Purpose:** Monitors energy thresholds to switch system execution modes dynamically.
+* **Core Function:** `battery_gate(level)`
+* **Key Logic Systems:**
+  * **Boundary Logic ($\le$ Operator):** Evaluates inclusive critical limits ($\le 20\%$) to enforce low-power state transitions.
+  * **Binary Decision States:** Operates a deterministic two-path state model (`if-else`) for predictable runtime behavior.
+
+----------------------------------------------------------------------------------------------------
+
